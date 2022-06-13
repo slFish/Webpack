@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datetime superapp</title>
+    <script src="./src/main.js" type="module"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav-tabs">
+        <a href="#" data-tab="1" class="nav-tab active">Калькулятор дат</a>
+        <a href="#" data-tab="2" class="nav-tab">Таймер</a>
+    </div>
+
+    <div class="tab-content">
+        <section data-tab-content="1" class="tab-pane active">
+            <form id="datecalc">
+                <h1>Калькулятор дат</h3>
+                    <label>
+                        <strong>Первая дата:</strong>
+                        <input type="date" name="firstDate" />
+                    </label>
+                    <label>
+                        <strong>Вторая дата:</strong>
+                        <input type="date" name="secondDate" />
+                    </label>
+                    <button type="submit">Расчитать промежуток</button>
+                    <p id="datecalc__result"></p>
+            </form>
+        </section>
+
+
+
+        <section data-tab-content="2" class="tab-pane">
+            <h1 class="countdown-title">До нового года осталось</h1>
+            <div>
+                <button id="start__btn" type="submit">Start</button>
+                <button id="test_start__btn" type="submit">5 seconds test</button>
+                <button id="stop__btn">Stop</button>
+            </div>
+            <div id="countdown" class="countdown">
+                <div class="countdown-number">
+                    <span class="days countdown-time"></span>
+                    <span class="countdown-text">Days</span>
+                </div>
+                <div class="countdown-number">
+                    <span class="hours countdown-time"></span>
+                    <span class="countdown-text">Hours</span>
+                </div>
+                <div class="countdown-number">
+                    <span class="minutes countdown-time"></span>
+                    <span class="countdown-text">Minutes</span>
+                </div>
+                <div class="countdown-number">
+                    <span class="seconds countdown-time"></span>
+                    <span class="countdown-text">Seconds</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
