@@ -2,6 +2,7 @@ import { diffDates, diffToHtml } from "./datecalc.js";
 import { formatError } from "./utils.js";
 import { initializeClock, deadline } from "./timer.js";
 import { tabNavs, tabPanes } from "./menu.js";
+import "../style.css";
 
 const dateCalcForm = document.getElementById("datecalc");
 const dateCalcResult = document.getElementById("datecalc__result");
